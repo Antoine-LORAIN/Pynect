@@ -1,5 +1,6 @@
 import freenect
 import cv2
+import numpy as np
 import frame_convert2
 
 def get_depth():
@@ -11,8 +12,13 @@ newList = []
 for y in range(480):
     newList.append([])
     for x in range(640):
-        newList[y].append([old_list[y][x], old_list[y][x], old_list[y][x]])
+        newList[y].append((old_list[y][x], old_list[y][x], old_list[y][x]))
 
 file = open("data.txt", "w")
 file.write(str(newList))
 file.close()
+npy = np.array(newList, dtype=np.uint8)
+cv2.imshow('Temp Picture', npy)
+while 1:
+    if cv2.waitKey(10) ==27:
+        break
