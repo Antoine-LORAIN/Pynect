@@ -3,7 +3,7 @@
 ## Installation
 #### Installation de libfreenect
 
-Il est nécessaire d'utiliser Raspberry Pi OS avec interface graphique d'installé.<br>
+Il est nécessaire d'utiliser Raspberry Pi OS avec interface graphique.<br>
 > [!CAUTION]
 > L'utilisation d'une distribution linux avec une interace graphiqe est obligatoire. L'affichage des images ne se fera pas si vous n'avez pas d'interface.
 
@@ -12,6 +12,7 @@ Il est nécessaire d'utiliser Raspberry Pi OS avec interface graphique d'install
 
 > [!IMPORTANT]
 > Il est nécessaire d'avoir les droits administrateurs pour l'installation.
+
 Mettez à jour le raspberry pi avec :
 ```
 sudo apt update
@@ -28,9 +29,9 @@ Clonez le dépot github de [libfreenect](https://github.com/OpenKinect/libfreene
 cd ~/
 git clone https://github.com/OpenKinect/libfreenect.git
 ```
-Lancez la compilation
+Compilez libfreenect
 ```
-cd libfreenect
+cd ~/libfreenect
 mkdir build
 cd build
 cmake -L ..
@@ -39,10 +40,10 @@ sudo make install
 sudo ldconfig /usr/local/lib64
 ```
 > [!NOTE]
-> Certaines erreur de compialtion peuvent apparaitre. Elles s'influencent pas le processus d'installation et l'utilisation de Pynect
+> Certaines erreurs de compialtion peuvent apparaitre. Elles s'influencent pas le processus d'installation ainsi l'utilisation de Pynect
+
 Afin de pouvoir executer libfreenect (et Pynect) dans les droits administrateur, executez les commandes suivantes
 ```
-
 sudo adduser $USER video
 sudo adduser $USER plugdev
 ```
@@ -77,9 +78,9 @@ freenect-glview
 ![Vue en couleur et en profondeur de la kinect avec libfreenect](https://github.com/Antoine-LORAIN/Pynect/blob/835f096545ded82342348291a202f41c3b7e8203/images/freenect-glview.png)
 
 #### Installation de freenect pour python
-Installez les paquets suivant nécessaire à installaion de freenect
+Installez les paquets suivants qui sont nécessaire à l'installaion et à l'utilisation de freenect
 ```
-sudo apt install cython python-dev python-numpy
+sudo apt install cython python-dev python-numpy python-opencv
 ```
 Déplacez vous dans le dossier freenect
 ```
@@ -94,7 +95,7 @@ Installez le wrapper python
 sudo python setup.py install
 ```
 > [!NOTE]
-> Certaines erreur de compialtion peuvent apparaitre. Elles s'influencent pas le processus d'installation et l'utilisation de Pynect
+> Certaines erreurs de compialtion peuvent apparaitre. Elles s'influencent pas le processus d'installation ainsi que l'utilisation de Pynect
 
 Vous pouvez désormais clonez le dépôt Pynect
 ```
