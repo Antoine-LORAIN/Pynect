@@ -74,7 +74,7 @@ Testez l'installation de libfreenect
 ```
 freenect-glview
 ```
-![Vue en couleur et en profondeur de la kinect avec libfreenect](https://github.com/Antoine-LORAIN/Pynect/blob/ceb38bfbc243e33e59e53640e12c49023f1e36de/Temp%20Picture_screenshot_17.01.2025.png)
+![Vue en couleur et en profondeur de la kinect avec libfreenect](https://github.com/Antoine-LORAIN/Pynect/blob/835f096545ded82342348291a202f41c3b7e8203/images/freenect-glview.png)
 
 #### Installation de freenect pour python
 Installez les paquets suivant nécessaire à installaion de freenect
