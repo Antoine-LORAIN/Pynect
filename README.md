@@ -8,7 +8,7 @@ Il est nécessaire d'utiliser Raspberry Pi OS avec interface graphique d'install
 > L'utilisation d'une distribution linux avec une interace graphiqe est obligatoire. L'affichage des images ne se fera pas si vous n'avez pas d'interface.
 
 > [!IMPORTANT]
-> Les utilisations de Pynect sur une autre distribution linux que raspberry pi OS n'ont pas été testée. A vos risques et périls
+> Les utilisations de Pynect sur d'autres distributions linux que raspberry pi OS n'ont pas été testées. A vos risques et périls
 
 > [!IMPORTANT]
 > Il est nécessaire d'avoir les droits administrateurs pour l'installation.
