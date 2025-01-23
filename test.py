@@ -2,6 +2,7 @@ import freenect
 import cv2
 import numpy as np
 import frame_convert2
+import json
 
 def get_depth():
     return frame_convert2.pretty_depth_cv(freenect.sync_get_depth()[0])
