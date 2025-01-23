@@ -3,7 +3,7 @@
 ## Installation
 #### Installation de libfreenect
 
-Il est nécessaire d'utiliser un raspberry pi avec Raspberry Pi OS avec interface graphique d'installé.<br>
+Il est nécessaire d'utiliser Raspberry Pi OS avec interface graphique d'installé.<br>
 > [!CAUTION]
 > L'utilisation d'une distribution avec une interace graphiqe est obligatoire. L'affichage des images ne se fera pas si vous n'avez pas d'interface.
 
