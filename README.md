@@ -80,7 +80,7 @@ freenect-glview
 #### Installation de freenect pour python
 Installez les paquets suivants qui sont nécessaire à l'installaion et à l'utilisation de freenect
 ```
-sudo apt install cython python-dev python-numpy python-opencv
+sudo apt install cython3 python3-dev python3-numpy python3-opencv
 ```
 Déplacez vous dans le dossier freenect
 ```
