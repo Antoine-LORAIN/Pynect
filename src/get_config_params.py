@@ -16,7 +16,7 @@ def get_colors():
         color = parser.options(bindings)[0]
         rgb_str = parser.get(bindings, color)
         rgb = rgb_str.split(',')
-        rgb_tuple = (rgb[0], rgb[1], rgb[2])
+        rgb_tuple = [rgb[0], rgb[1], rgb[2]]
         colors[new_pos].append((min, max))
         colors[new_pos].append(rgb_tuple)
     return colors
