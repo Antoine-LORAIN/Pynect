@@ -3,6 +3,7 @@ from configparser import ConfigParser
 def get_colors():
     parser = create_parser("src/config.ini")
     sections = parser.sections()
+    print(sections)
     sections.remove("UTILS")
     sections.remove("CUSTOMIZATION")
     colors = []
@@ -20,10 +21,6 @@ def get_colors():
         colors[new_pos].append(rgb_tuple)
     return colors
 
-def get_time_before_launch():
-    parser = create_parser("src/config.ini")
-    return parser.get('UTILS', 'time_before_launch')
-
 def get_scale():
     parser = create_parser("src/config.ini")
     return parser.get('UTILS', 'scale')
@@ -37,3 +34,5 @@ def create_parser(file):
     parser = ConfigParser()
     parser.read(file)
     return parser
+
+print(get_colors())
