@@ -3,7 +3,6 @@ from configparser import ConfigParser
 def get_colors():
     parser = create_parser("src/config.ini")
     sections = parser.sections()
-    print(sections)
     sections.remove("UTILS")
     sections.remove("CUSTOMIZATION")
     colors = []
@@ -34,5 +33,3 @@ def create_parser(file):
     parser = ConfigParser()
     parser.read(file)
     return parser
-
-print(get_colors())

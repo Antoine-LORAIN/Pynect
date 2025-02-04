@@ -4,7 +4,6 @@ import cv2
 from get_config_params import * 
 
 test1 = get_colors()
-print(test1)
 last_color = [None]
 
 imageRGB = Image.open("src/other.png") # ou jpg
@@ -25,6 +24,7 @@ for y in range(480):
                     newList[y].append((loop[1]))
                     last_color = [old_list[y][x],loop[1]]
                     jsp = True
+                    break
             if jsp != True:
                 newList[y].append((255,0,0))
    
