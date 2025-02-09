@@ -1,11 +1,11 @@
 import freenect
 import cv2
-import sources.frame_convert2
+import sources.frame_convert2 as fc2
 import numpy as np
 from sources.get_config_params import *
 
 def get_depth():
-    return frame_convert2.pretty_depth_cv(freenect.sync_get_depth()[0])
+    return fc2.pretty_depth_cv(freenect.sync_get_depth()[0])
 
 def modifiedColors():
     old_list = get_depth().tolist()
