@@ -20,9 +20,7 @@ sudo apt upgrade -y
 ```
 Installer les dépendances nécessaire pour la compilation de libfreenect :
 ```
-sudo apt install git cmake freeglut3-dev \ 
-pkg-config build-essential libxmu-dev \
-libxi-dev libusb-1.0-0-dev -y
+sudo apt install git cmake freeglut3-dev pkg-config build-essential libxmu-dev libxi-dev libusb-1.0-0-dev -y
 ```
 Clonez le dépot github de [libfreenect](https://github.com/OpenKinect/libfreenect)
 ```
