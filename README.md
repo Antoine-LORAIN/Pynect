@@ -20,9 +20,7 @@ sudo apt upgrade -y
 ```
 Installer les dépendances nécessaire pour la compilation de libfreenect :
 ```
-sudo apt install git cmake freeglut3-dev \ 
-pkg-config build-essential libxmu-dev \
-libxi-dev libusb-1.0-0-dev -y
+sudo apt install git cmake freeglut3-dev pkg-config build-essential libxmu-dev libxi-dev libusb-1.0-0-dev -y
 ```
 Clonez le dépot github de [libfreenect](https://github.com/OpenKinect/libfreenect)
 ```
@@ -75,8 +73,6 @@ Testez l'installation de libfreenect
 ```
 freenect-glview
 ```
-![Vue en couleur et en profondeur de la kinect avec libfreenect](https://github.com/Antoine-LORAIN/Pynect/blob/835f096545ded82342348291a202f41c3b7e8203/images/freenect-glview.png)
-
 #### Installation de freenect pour python
 Installez les paquets suivants qui sont nécessaire à l'installaion et à l'utilisation de freenect
 ```
