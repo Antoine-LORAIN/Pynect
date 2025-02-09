@@ -1,8 +1,8 @@
 import freenect
 import cv2
-import frame_convert2
+import sources.frame_convert2
 import numpy as np
-from src.get_config_params import *
+from sources.get_config_params import *
 
 def get_depth():
     return frame_convert2.pretty_depth_cv(freenect.sync_get_depth()[0])
@@ -11,7 +11,7 @@ def modifiedColors():
     old_list = get_depth().tolist()
     newList = []
     last_color = [None]
-    test1 = get_colors()
+    test1 = get_colors("sources/config.ini")
     for y in range(480):
         newList.append([])
         for x in range(640):
@@ -30,6 +30,6 @@ def modifiedColors():
     return np.array(newList,dtype=np.uint8)
 
 while 1:
-    cv2.imshow(get_window_title(), modifiedColors())
+    cv2.imshow(get_window_title("sources/config.ini"), modifiedColors())
     if cv2.waitKey(10) == 27:
         break
