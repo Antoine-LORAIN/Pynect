@@ -100,7 +100,7 @@ sudo python setup.py install
 Vous pouvez désormais clonez le dépôt Pynect
 ```
 cd ~/
-git clone {{{URL A INSERER UNE FOIS FINI}}}
+git clone https://github.com/Antoine-LORAIN/Pynect.git
 ```
 
 ## Utilisation
@@ -110,11 +110,6 @@ cd ~/Pynect
 python main.py
 ```
 > [!CAUTION]
-> Si l'application met du temps à démarrer ou que vous avez ce message : 
-> ```
->Message à ajouter
->```
->Initialisez la kinect avec
->```
->freenect-glview
->```
+> Si l'application ne ce lance pas et que ```Ctrl+C``` ne fait rien, fermez le terminal et executez
+> ```freenect-glview```
+> Fermez cette fenêtre en appuiant sur ```Echap``` et relancez l'application
