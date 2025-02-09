@@ -1,4 +1,4 @@
-# Pynect v0.1-Dev
+# Pynect v1
 
 ## Installation
 #### Installation de libfreenect
