@@ -6,7 +6,7 @@ from get_config_params import *
 test1 = get_colors()
 last_color = [None]
 
-imageRGB = Image.open("src/other.png") # ou jpg
+imageRGB = Image.open("src/test.png") # ou jpg
 imageGrey = imageRGB.convert("L")
 image_data = np.asarray( imageGrey )
 old_list = image_data.tolist()
