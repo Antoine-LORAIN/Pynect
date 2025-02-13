@@ -19,13 +19,13 @@ def modifiedColors():
             if last_color[0] == old_list[y][x]:
                 newList[y].append(last_color[1])
             else:
-                jsp = False
+                couleur_hors_liste = False
                 for loop in test1:
                     if old_list[y][x] >= int(loop[0][0]) and old_list[y][x] <= int(loop[0][1]):
                         newList[y].append((loop[1]))
                         last_color = [old_list[y][x],loop[1]]
-                        jsp = True
-                if jsp != True:
+                        couleur_hors_liste = True
+                if couleur_hors_liste != True:
                     newList[y].append((255,0,0))
     return np.array(newList,dtype=np.uint8)
 
