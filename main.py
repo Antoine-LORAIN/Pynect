@@ -11,7 +11,7 @@ def modifiedColors():
     old_list = get_depth().tolist()
     newList = []
     last_color = [None]
-    test1 = get_colors("sources/config.ini")
+    colours_from_config = get_colors("sources/config.ini")
     for y in range(480):
         newList.append([])
         for x in range(640):
@@ -20,7 +20,7 @@ def modifiedColors():
                 newList[y].append(last_color[1])
             else:
                 couleur_hors_liste = False
-                for loop in test1:
+                for loop in colours_from_config:
                     if old_list[y][x] >= int(loop[0][0]) and old_list[y][x] <= int(loop[0][1]):
                         newList[y].append((loop[1]))
                         last_color = [old_list[y][x],loop[1]]
