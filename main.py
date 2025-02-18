@@ -26,7 +26,10 @@ def modifiedColors():
                         last_color = [old_list[y][x],loop[1]]
                         couleur_hors_liste = True
                 if couleur_hors_liste != True:
-                    newList[y].append((255,0,0))
+                    newList[y].append((255,255,255))
+                    last_color = [old_list[y][x],(255,255,255)]
+
+
     return np.array(newList,dtype=np.uint8)
 
 while 1:
